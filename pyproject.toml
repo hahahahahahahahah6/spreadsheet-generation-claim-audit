@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spreadsheet-generation-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim auditor for Python projects"
+requires-python = ">=3.9"
+license = "MIT"
+readme = "README.md"
+
+[project.scripts]
+spreadsheet-generation-claim-audit = "spreadsheet_generation_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["spreadsheet_generation_claim_audit*", "tests"]
